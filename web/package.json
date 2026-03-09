@@ -1,0 +1,65 @@
+{
+  "name": "agentpipe-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@auth/core": "0.37.0",
+    "@convex-dev/auth": "^0.0.90",
+    "@geenius-ai/react": "^0.0.1",
+    "@geenius-auth/react": "^0.0.1",
+    "@geenius-tools/errors-react": "^0.0.1",
+    "@geenius-ui/react-css": "^0.1.4",
+    "@vercel/analytics": "^1.6.1",
+    "convex": "^1.32.0",
+    "i18next": "^25.8.13",
+    "i18next-browser-languagedetector": "^8.2.1",
+    "jose": "^6.1.3",
+    "lucide-react": "^0.575.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-i18next": "^16.5.4",
+    "react-router-dom": "^7.13.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.10.13",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "jsdom": "^28.1.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.48.0",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18"
+  },
+  "description": "AI agent pipeline orchestration platform",
+  "author": "Mehdi Nabhani <mehdi@geenius.app>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxn2020/agentpipe.git"
+  },
+  "keywords": [
+    "agentpipe",
+    "pipeline",
+    "ai",
+    "agent",
+    "convex"
+  ]
+}

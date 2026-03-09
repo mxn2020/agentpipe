@@ -1,0 +1,12 @@
+services:
+  convex:
+    project: AgentPipe
+  vercel:
+    project: AgentPipe
+  stripe:
+    mode: live
+  nvidia:
+    api: nvidia-nims
+  github:
+    owner: mxn2020
+    repo: agentpipe

@@ -1,0 +1,29 @@
+{
+    "nav": {
+        "pricing": "Pricing",
+        "dashboard": "Dashboard",
+        "login": "Login",
+        "profile": "Profile",
+        "theme": "Toggle theme"
+    },
+    "landing": {
+        "title": "Welcome to Your App",
+        "subtitle": "The best way to start building your next great idea.",
+        "cta": "Get Started",
+        "features": "Features"
+    },
+    "common": {
+        "save": "Save",
+        "cancel": "Cancel",
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "success": "Success",
+        "tryAgain": "Try Again"
+    },
+    "auth": {
+        "signIn": "Sign In",
+        "signOut": "Sign Out",
+        "email": "Email Address",
+        "password": "Password"
+    }
+}
