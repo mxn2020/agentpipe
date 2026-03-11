@@ -5,7 +5,7 @@ import { CreditCard, Check, ArrowLeft, Loader2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { MissingConfigDialog } from '../components/MissingConfigDialog'
-import { toast } from 'sonner'
+import toast from 'react-hot-toast'
 
 type Plan = {
     id: string

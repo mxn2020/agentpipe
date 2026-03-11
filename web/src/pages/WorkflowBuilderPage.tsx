@@ -4,7 +4,7 @@ type Id<T extends string> = string & { __tableName: T };
 import { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import {
-import { toast } from 'sonner'
+import toast from 'react-hot-toast'
     Layers, Plus, Trash2, Play, ArrowUp, ArrowDown, Save,
     FileText, Image, Volume2, Video, Bot, ChevronDown, ChevronUp,
     Globe, GlobeLock

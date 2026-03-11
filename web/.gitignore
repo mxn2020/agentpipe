@@ -24,3 +24,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vercel
+
+# Added by AI Agent
+.env
+.env.*
+!.env.example

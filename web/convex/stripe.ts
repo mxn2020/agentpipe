@@ -136,7 +136,7 @@ export const updateSubscription = mutation({
             .first();
 
         if (profile) {
-            await ctx.db.patch(profile._id, { plan });
+            await ctx.db.patch(profile._id, { plan: plan as "free" | "pro" | "max" | "enterprise" });
         }
     },
 });
@@ -165,6 +165,7 @@ export const activateSubscription = internalMutation({
         plan: v.string(),
     },
     handler: async (ctx, { userId, stripeCustomerId, plan }) => {
+        const typedPlan = plan as "free" | "pro" | "max" | "enterprise";
         let profile = await ctx.db
             .query("userProfiles")
             .withIndex("by_userId", (q) => q.eq("userId", userId))
@@ -176,7 +177,7 @@ export const activateSubscription = internalMutation({
                 userId,
                 name: "",
                 role: "user",
-                plan,
+                plan: typedPlan,
                 stripeCustomerId,
                 createdAt: Date.now(),
             });
@@ -184,7 +185,7 @@ export const activateSubscription = internalMutation({
         }
 
         await ctx.db.patch(profile._id, {
-            plan,
+            plan: typedPlan,
             stripeCustomerId,
         });
     },
@@ -255,7 +256,7 @@ export const createPortalSession = action({
 
         const siteUrl: string = process.env.SITE_URL ?? "http://localhost:5173";
 
-        const profile: { stripeCustomerId?: string } | null = await ctx.runQuery(
+        const profile = await ctx.runQuery(
             internal.users.getProfileByUserId, { userId }
         );
         if (!profile?.stripeCustomerId) {

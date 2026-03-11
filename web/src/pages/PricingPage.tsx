@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { MissingConfigDialog } from '../components/MissingConfigDialog'
 import { Loader2 } from 'lucide-react'
-import { toast } from 'sonner'
+import toast from 'react-hot-toast'
 
 type Plan = {
     id: string

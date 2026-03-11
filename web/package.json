@@ -9,15 +9,16 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:run": "vitest run",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "stop": "pkill -f 'vite.*agentpipe' || true"
   },
   "dependencies": {
     "@auth/core": "0.37.0",
     "@convex-dev/auth": "^0.0.90",
-    "@geenius-ai/react": "^0.0.1",
-    "@geenius-auth/react": "^0.0.1",
-    "@geenius-tools/errors-react": "^0.0.1",
-    "@geenius-ui/react-css": "^0.1.4",
+    "@geenius-ai/react": "link:../../../packages/geenius-ai/packages/react",
+    "@geenius-auth/react": "link:../../../packages/geenius-auth/packages/react",
+    "@geenius-tools/errors-react": "link:../../../packages/geenius-tools/packages/errors-react",
+    "@geenius-ui/react-css": "link:../../../packages/geenius-ui/packages/react-css",
     "@vercel/analytics": "^1.6.1",
     "convex": "^1.32.0",
     "i18next": "^25.8.13",
@@ -27,7 +28,8 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-i18next": "^16.5.4",
-    "react-router-dom": "^7.13.1"
+    "react-router-dom": "^7.13.1",
+    "react-hot-toast": "^2.4.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -38,6 +40,7 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
+    "@vitest/coverage-v8": "^4.0.18",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",

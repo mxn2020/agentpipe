@@ -1,21 +1,18 @@
-id: cf3dfc82-b369-47e4-8bfd-850156700a75
 name: agentpipe
-description: "AI processing platform — reseller marketplace for node-based AI workflows with tiered plans"
+project_scope: main
+project_type: standalone
+description: AI processing platform — reseller marketplace for node-based AI workflows with tiered plans
 tier: development
 lane: main
 priority: high
-category: ai-services
-focus: true
-open_tasks: 0
 oss: false
 stack: [typescript, react, convex, vite]
-repo: https://github.com/mxn2020/agentpipe
+repo: "https://github.com/mxn2020/agentpipe"
 deploy_url: null
 last_active: 2026-03-02
 tags: [workflows, nodes, ai-processing, reseller, text, image, audio, video]
-notes: >
-  AI processing reseller platform. Users build node-based AI workflows
-  (text/image/audio/video) with their own prompts, set pricing, and sell
-  to consumers. Supports chaining node outputs as context. Structured JSON
-  output with key selection. Tiered: Free (3 workflows/5 nodes),
-  Pro (10/20), Max (unlimited). Built on geenius-template.
+notes: ">"
+category: fullstack-app
+focus: true
+open_tasks: 0
+id: cf3dfc82-b369-47e4-8bfd-850156700a75
