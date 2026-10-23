@@ -1,7 +1,7 @@
 # AgentPipe
 
 [![CI](https://github.com/mxn2020/agentpipe/actions/workflows/ci.yml/badge.svg)](https://github.com/mxn2020/agentpipe/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-yellow.svg)](https://opensource.org/licenses/Apache-2.0)
 
 AI agent pipeline orchestration platform for multi-step workflows
 
@@ -23,3 +23,7 @@ pnpm install
 npx convex dev        # Start Convex backend
 pnpm run dev          # Start Vite dev server
 ```
+
+---
+
+> **License note:** As of 2026-10-23 this project is licensed under the Apache License 2.0 (previously MIT). Versions released before this change remain available under MIT to those who received them.
